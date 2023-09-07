@@ -7,16 +7,11 @@ const getDay = date.getUTCDay()
 
 
 const updateTime = () => {
-    const date = new Date()
+    const date = Date.now()
     const time = document.getElementById('currentUTCTime')
-    const utcHours = date.getUTCHours().toString().padStart(2, '0')
-    const utcMins = date.getUTCMinutes().toString().padStart(2, '0')
-    const utcSecs = date.getUTCSeconds().toString().padStart(2, '0')
-
-    const getTime = `${utcHours} : ${utcMins} : ${utcSecs}`
-    time.textContent = getTime
+    time.textContent = date
 }
-setInterval(updateTime, 1000)
+setInterval(updateTime, 1)
 updateTime()
 
 const weekDays = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday']
