@@ -1,0 +1,33 @@
+body {
+    font-family: 'Poppins';
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+}
+
+h1 {
+    font-weight: 900;
+    text-transform: uppercase;
+}
+h2 {
+    font-weight: 600;
+}
+
+span {
+    color: #909090
+}
+
+img {
+    height: 100px;
+    width: auto;
+    border-radius: 50%;
+}
+
+.wrapper {
+    border: solid 1px #999;
+    margin: 40px 5%;
+    padding: 10px;
+    border-radius: 10px;
+}
